@@ -1,0 +1,175 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+/*body {
+  background: rgb(204,204,204); 
+}*/
+
+p{
+	  font-size: 15px;
+    margin-bottom: 0;
+   /* padding: 10px 0;*/
+}
+
+page {
+  background: white;
+  display: block;
+  margin: 50px auto;
+  margin-bottom: 0.5cm;
+  /*box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);*/
+}
+
+page[size="A5"] {  
+  width: 210mm;
+  height: 148mm; 
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+.page-cover{
+	padding: 15px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	border: 5px solid #d91e27;
+}
+
+.header{
+	height: 80px;
+	background-color: #d91e27;
+	margin: -15px;
+}
+
+.header .col-md-3{
+	height: 80px;
+}
+
+.header img{
+	height: 94%;
+	width: 100%;
+}
+
+.header h1{
+	font-size: 29px;
+    font-weight: 900;
+    text-align: center;
+    margin-top: 22px;
+    margin-left: -25px;
+    color: #07507d;
+}
+
+.header h1 span{
+		font-weight: 700;
+}
+
+.description{
+	padding-top: 25px;
+	position: relative;
+}
+
+.description h5{
+	    text-align: center;
+    font-size: 17px;
+    color: #0b517f;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.background{
+	    background-color: #d91e27;
+    width: 620px;
+}
+
+.background h3{
+	color: #0b517f;
+    font-size: 22px;
+    padding: 5px 12px;
+    font-weight: 600;
+}
+
+.table-cover{
+	width: 350px;
+	margin: auto;
+	    padding-top: 7px;
+}
+table{
+	width: 100%;
+}
+
+table, th, td{
+	  padding: 3px 9px;
+    color: #0c5280;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+td{
+	width: 110px;
+}
+
+tr td:first-child{
+	width: 50px;
+	text-align: right;
+}
+
+tr td:last-child{
+	width: 200px;
+}
+
+tr td:last-child:before{
+	content: ":";
+	padding-right: 20px;
+}
+.guard-img{
+	position: absolute;
+	top: 80px;
+	right: 0;
+}
+
+.description h4{
+	      text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 28px 0 15px;
+    color: #0c5280;
+	
+}
+
+.description h4 span{
+	border-bottom: 1px solid #d91e27;
+}
+
+.footer{
+	  border-top: 7px solid #d91e27;
+    border-right: 20px solid #d91e27;
+    border-bottom: 4px solid #d91e27;
+    border-left: 20px solid #d91e27;
+    border-radius: 30px;
+    width: 514px;
+    margin: auto;
+}
+
+.footer h2{
+	color: #0b517f;
+    font-size: 26px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer p, .footer small{
+	text-align: center;
+	 color: #0c5280;
+	 font-weight: 600;
+}
+
+.footer small{
+	font-size: 90%;
+}
